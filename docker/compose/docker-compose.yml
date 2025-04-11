@@ -53,7 +53,7 @@ services:
     restart: unless-stopped
 
   crawl4ai:
-    image: unclecode/crawl4ai:all
+    image: unclecode/crawl4ai:all-amd64
     container_name: devdocs-crawl4ai
     ports:
       - "${CRAWL4AI_PORT:-11235}:11235"
